@@ -129,7 +129,7 @@ public class UseElement : NetworkBehaviour {
     }
 
 
-	// Ideas by Brian (BruFFuS): sorry, I have mac. Your game looks fun though.
+	// Ideas by Brian (BruFFuS):
 	//
 	// Possible commands/skills for players: 
 
@@ -137,30 +137,36 @@ public class UseElement : NetworkBehaviour {
 	// 
 	// You can have so that each class a different ult. 
 	//
-	// Mages: Probably have giant spinning fire ball around them for 5 seconds and movement speed increases as well (for dodging). 
-	// Each time you're hit by that ball you do lots of damage.
-	// (Similar to Aurelion Sol in League of Legends 
-	// (https://78.media.tumblr.com/26e1142259670b4cd0bc1e825acf1a8f/tumblr_o3qjgjDTRA1v1uteuo1_500.gif
-
+	// Mages: 
+	// "AAWW": Giant spinning fire ball around them for 5 seconds and movement speed increases as well (for dodging). 
+	// Each time you're hit by that ball you -20HP of damage.
+	// (Similar to Aurelion Sol in League of Legends) 
+	// (https://78.media.tumblr.com/26e1142259670b4cd0bc1e825acf1a8f/tumblr_o3qjgjDTRA1v1uteuo1_500.gif)
+	//
+	// "SAWD": Create "enviroment" summons one of those environment objects you can hide
+	// behind.
+	// "WAWA": Become invisible for 5 seconds. But become visible again when damaged or attacking/casting spells.
+	//
 	// Knights: Have an adrenaline rush ability as an ult.
 	// Increases your attack speed and defense for 5 seconds.
 	// as a counter to take slightly more damage.
-
-	// Archer: Have an ult that can hit multiple targets at once.
-	// https://thumbs.gfycat.com/LoneJoyfulBarnowl-size_restricted.gif
-	// OR
-	// an archer's ult can be a stun. So their ult increases their attack speed. But every 3 arrows stuns an enemy for .25 
-	// seconds or something. 
 	//
-	// For characters in general.
-	// Have a reflect skill: "AWSD", say an enemy is attacking you with a fireball. 
+	// "SSSA": Throw your knives at enemy
+	//  
+
+	// Archer: 
+	//
+	// "SWSW":  Arrow stuns an enemy for .25 seconds. 
+	//
+	// For characters in general:
+	// "AWSD": Reflect
+	// say an enemy is attacking you with a fireball. 
 	// You can reflect that skill back to them.
 	//
-	// "QQQQ" that makes you invulnerable for .5 seconds
+	// "DWSA": invulnerable for .5 seconds
 	//
-	// Maybe useful for countering attacks.
-	// If you're a wizard/ mage: Create "enviroments" you can create like a little hill that you can hide
-	// behind.
+	// "SDWS": Leave an explosive on the ground that when stepped on does -15hp damage.
+	//  
 	//
 	//
 
