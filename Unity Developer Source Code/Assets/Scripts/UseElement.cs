@@ -129,6 +129,50 @@ public class UseElement : NetworkBehaviour {
     }
 
 
+	// Ideas by Brian (BruFFuS):
+	//
+	// Possible commands/skills for players: 
+
+	// Maybe have like an "Ult" : 
+	// 
+	// You can have so that each class a different ult. 
+	//
+	// Mages: 
+	// "AAWW": Giant spinning fire ball around them for 5 seconds and movement speed increases as well (for dodging). 
+	// Each time you're hit by that ball you -20HP of damage.
+	// (Similar to Aurelion Sol in League of Legends) 
+	// (https://78.media.tumblr.com/26e1142259670b4cd0bc1e825acf1a8f/tumblr_o3qjgjDTRA1v1uteuo1_500.gif)
+	//
+	// "SAWD": Create "enviroment" summons one of those environment objects you can hide
+	// behind. Created enviroment disappears after 20 secs.
+	//
+	// "WAWA": Become invisible for 5 seconds. But become visible again when damaged or attacking/casting spells.
+	//
+	// Knights: 
+	// "SAAD": "Adrenaline rush" Increases your attack speed for 5 seconds. take slightly more damage (+2hp).
+	//
+	// "SSSA": Throw your knives at enemy
+	// "WWAA": "Swing your sword around". Damages enemies in a 40 pixel radius. 
+
+	// Archer: 
+	//
+	// "SWSW":  Arrow stuns an enemy for .25 seconds. 
+	// "AWAW" : Reveal invisble enemies in a 40 pixel radius.
+
+	//
+	// For characters in general:
+	//
+	// "AWSD": Reflect
+	// say an enemy is attacking you with a fireball. 
+	// You can reflect that skill back to them.
+	//
+	// "DWSA": invulnerable for .5 seconds
+	//
+	// "SDWS": Leave an explosive on the ground that when stepped on does -15hp damage.
+	//  
+	//
+	//
+
     [Command]
     void CmdEpt(Vector3 a)
     {
