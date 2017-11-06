@@ -17,65 +17,16 @@ Platform assembly: C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\Unity
 Loading C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.015 seconds
+- Completed reload, in  0.012 seconds
 Platform assembly: C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Kevin\PlaygroundE\Start Game\game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.305356 ms
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-reactor filed to acomplish request with code {1234}, bytesReceived {0}
-NullReferenceException: Object reference not set to an instance of an object
-  at UseElement.recEle (Char ele, Int32 num) [0x00000] in <filename unknown>:0 
-  at UseElement.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:8.22.108.39:52673}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UseElement.recEle (Char ele, Int32 num) [0x00000] in <filename unknown>:0 
-  at UseElement.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UseElement.recEle (Char ele, Int32 num) [0x00000] in <filename unknown>:0 
-  at UseElement.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:8.22.108.39:61845}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UseElement.recEle (Char ele, Int32 num) [0x00000] in <filename unknown>:0 
-  at UseElement.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:8.22.108.39:58225}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at UseElement.recEle (Char ele, Int32 num) [0x00000] in <filename unknown>:0 
-  at UseElement.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
+UnloadTime: 2.414196 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 2f34 -> priority: 1 
-  Thread -> id: 3740 -> priority: 1 
-  Thread -> id: 2f4 -> priority: 1 
-  Thread -> id: 1b4 -> priority: 1 
+  Thread -> id: 252c -> priority: 1 
+  Thread -> id: 30e8 -> priority: 1 
+  Thread -> id: 2090 -> priority: 1 
+  Thread -> id: 21ac -> priority: 1 
