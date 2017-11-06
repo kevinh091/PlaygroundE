@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New PlayGround", "New PlayGround.csproj", "{1D8638F3-B973-870B-994A-4CB6A83D0966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New PlayGround.Editor", "New PlayGround.Editor.csproj", "{34078DCD-0A67-6C5B-E3CD-C495E4C2A434}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D8638F3-B973-870B-994A-4CB6A83D0966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8638F3-B973-870B-994A-4CB6A83D0966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8638F3-B973-870B-994A-4CB6A83D0966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8638F3-B973-870B-994A-4CB6A83D0966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34078DCD-0A67-6C5B-E3CD-C495E4C2A434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34078DCD-0A67-6C5B-E3CD-C495E4C2A434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34078DCD-0A67-6C5B-E3CD-C495E4C2A434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34078DCD-0A67-6C5B-E3CD-C495E4C2A434}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
