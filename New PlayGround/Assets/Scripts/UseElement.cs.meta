@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c475f62c711c1c84894eb25f144ba3b1
+timeCreated: 1508722792
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - mainCan: {instanceID: 0}
+  - Ept: {instanceID: 0}
+  - Map: {instanceID: 0}
+  - SkillBook: {fileID: 1901683798218628, guid: f7cf3d5738dd3624683dc3ac7a1832cf,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

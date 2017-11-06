@@ -305,6 +305,9 @@ public class UseElement : NetworkBehaviour {
                 location.z = -1;
                 CmdAAAD(location);
             }
+			if (num[1] == 2 &&num[4]==2) {  //2 water, 2 earth  // go stealth
+                this.transform.position.z=2;
+            }
             clear();
             CmdButton("Clear", next);
         }
