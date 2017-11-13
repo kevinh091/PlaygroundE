@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 public class Move : NetworkBehaviour {
 
     public float Speed;
-    private Vector3 Target;
+    public Vector3 Target;
     public int worldSize;
     public bool isStealth = false;
 
