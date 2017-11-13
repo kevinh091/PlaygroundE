@@ -13,6 +13,8 @@ public class Stats : NetworkBehaviour {
     private GameObject NetPreb;
     public GameObject Guide;
     public List<GameObject> heros;
+    [SyncVar] public string heroSelected ="";
+    public bool deleted = false;
 
     void Start()
     {
@@ -24,6 +26,25 @@ public class Stats : NetworkBehaviour {
 
     void Update()
     {
+        if (heroSelected != "" && !deleted) {
+            if (heroSelected == "Knight") {
+                Destroy(this.gameObject.transform.Find("archer2").gameObject);
+                Destroy(this.gameObject.transform.Find("mage_dark").gameObject);
+                deleted = true;
+            }
+            if (heroSelected == "Archor")
+            {
+                Destroy(this.gameObject.transform.Find("knight").gameObject);
+                Destroy(this.gameObject.transform.Find("mage_dark").gameObject);
+                deleted = true;
+            }
+            if (heroSelected == "Mage")
+            {
+                Destroy(this.gameObject.transform.Find("archer2").gameObject);
+                Destroy(this.gameObject.transform.Find("knight").gameObject);
+                deleted = true;
+            }
+        }
         if (!isLocalPlayer)
         {
             return;
@@ -45,8 +66,7 @@ public class Stats : NetworkBehaviour {
     [Command]
     void CmdKnight(GameObject a)
     {
-        GameObject hero = Instantiate(heros[0], a.transform.Find("Mesh").transform, false);
-        NetworkServer.Spawn(hero);
+        heroSelected = "Knight";
     }
     public void OnClickedArchor()
     {
@@ -57,8 +77,7 @@ public class Stats : NetworkBehaviour {
     [Command]
     void CmdArchor(GameObject a)
     {
-        GameObject hero = Instantiate(heros[1], a.transform.Find("Mesh").transform, false);
-        NetworkServer.Spawn(hero);
+        heroSelected = "Archor";
     }
     public void OnClickedMage()
     {
@@ -69,8 +88,7 @@ public class Stats : NetworkBehaviour {
     [Command]
     void CmdMage(GameObject a)
     {
-        GameObject hero = Instantiate(heros[2], a.transform.Find("Mesh").transform, false);
-        NetworkServer.Spawn(hero);
+        heroSelected = "Mage";
     }
 
     public void Damage(float input) 

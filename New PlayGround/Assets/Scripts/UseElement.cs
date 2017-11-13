@@ -27,6 +27,8 @@ public class UseElement : NetworkBehaviour {
     public GameObject Map;
     public GameObject SkillBook;
     public GameObject Ept;
+    private float cdEpt = 1;
+    private float lastEpt=0;
 
     public void recEle(char ele, int num)
     {
@@ -207,9 +209,10 @@ public class UseElement : NetworkBehaviour {
         NetworkServer.Spawn(AAAD);
         Destroy(AAAD, 1.0f);
     }
-    void WWDD()
+    void WWDD(GameObject a)
     {
-        this.GetComponent<Move>().isStealth = true;
+        a.GetComponent<Move>().Target.z = 4;
+        a.GetComponent<Move>().isStealth = true;
     }
     [Command]
     void CmdButton(string input, int next)
@@ -297,8 +300,12 @@ public class UseElement : NetworkBehaviour {
             }
             if (num[0] ==4)  // bullet, empty left click
             {
-                Vector3 a = Input.mousePosition - Camera.main.WorldToScreenPoint(this.transform.position);
-                CmdEpt(a);
+                if ((Time.time - lastEpt) > cdEpt)
+                {
+                    Vector3 a = Input.mousePosition - Camera.main.WorldToScreenPoint(this.transform.position);
+                    CmdEpt(a);
+                    lastEpt = Time.time;
+                }
             }
             if (num[1]==1 && num[2] == 1 &&num[3] == 1 && num[4] == 1 )  //WASD to craft Q
             {
@@ -312,7 +319,7 @@ public class UseElement : NetworkBehaviour {
 			if (num[1] == 2 &&num[4]==2) {  //2 water, 2 earth  // go stealth
                 Vector3 stealth = new Vector3(0, 0, 4);
                 this.transform.position = this.transform.position + stealth;
-                WWDD();
+                WWDD(this.gameObject);
                 
             }
             clear();
