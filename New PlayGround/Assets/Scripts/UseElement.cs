@@ -29,6 +29,21 @@ public class UseElement : NetworkBehaviour {
     public GameObject Ept;
     private float cdEpt = 1;
     private float lastEpt=0;
+    public GameObject spawnElements;
+
+    public void onDeath() {
+        List<int> loot=new List<int>();
+        for (int i = 0; i < (numOfQ+numOfW+numOfA+numOfS+numOfD); i++)
+        {
+            if (i < numOfQ) { loot.Add(0);}
+            if (i < numOfQ+ numOfW) { loot.Add(1); }
+            if (i < numOfQ + numOfW+ numOfA) { loot.Add(2); }
+            if (i < numOfQ + numOfW+ numOfA + numOfS) { loot.Add(3); }
+            if (i < numOfQ + numOfW + numOfA + numOfS + numOfD) { loot.Add(4); }
+        }
+        spawnElements.GetComponent<AddPowerUps>().spawn_loot(loot ,this.transform.position);
+    }
+
 
     public void recEle(char ele, int num)
     {
@@ -73,6 +88,7 @@ public class UseElement : NetworkBehaviour {
 
     void Start()
     {
+        spawnElements = GameObject.Find("Elements");
         viewingMap = false;
         viewingP = false;
         clear();

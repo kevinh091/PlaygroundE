@@ -11,7 +11,7 @@ public class Stats : NetworkBehaviour {
     public GameObject healthBar;
     private float timer = 0f;
     private GameObject NetPreb;
-    public GameObject Guide;
+    public GameObject LostMessege;
     public List<GameObject> heros;
     [SyncVar] public string heroSelected ="";
     public bool deleted = false;
@@ -106,13 +106,13 @@ public class Stats : NetworkBehaviour {
         {
             if (isLocalPlayer)
             {
-                GameObject guide = Instantiate(Guide) as GameObject;
-                guide.transform.SetParent(this.transform.parent, false);
+                GameObject lost = Instantiate(LostMessege) as GameObject;
                 NetPreb.GetComponentInChildren<NewHUD>().manager.StopHost();
                 StartCoroutine(Restart());
             }
             if (isServer)
             {
+                this.gameObject.GetComponent<UseElement>().onDeath();
                 Destroy(this.gameObject);
             }
         }
