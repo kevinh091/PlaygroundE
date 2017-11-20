@@ -22,6 +22,17 @@ public class AddPowerUps : NetworkBehaviour
             NetworkServer.Spawn(itemClone);
         }
     }
+    public void spawn_loot(List<int> loots, Vector3 location) {
+        for (int i = 0; i < loots.Count; i++)
+        {
+            x = location.x + Random.Range(-5f, 5f);
+            y = location.y + Random.Range(-5f, 5f);
+            z = location.z;
+            spawn_pos = new Vector3(x, y, z);
+            GameObject itemClone = Instantiate(itemPrefab, spawn_pos, itemPrefab.transform.rotation);
+            NetworkServer.Spawn(itemClone);
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
